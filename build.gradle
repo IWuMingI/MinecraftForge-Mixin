@@ -1,0 +1,58 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+        maven { url "https://maven.minecraftforge.net" }
+    }
+    dependencies {
+        classpath "net.minecraftforge.gradle:ForgeGradle:5.1.+"
+        classpath 'org.spongepowered:mixingradle:0.7.+'
+    }
+}
+
+apply plugin: "net.minecraftforge.gradle"
+apply plugin: 'org.spongepowered.mixin'
+
+version = "1.0"
+group = "yourgroup"
+archivesBaseName = "1.12.2"
+
+sourceCompatibility = targetCompatibility = "1.8"
+compileJava {
+    sourceCompatibility = targetCompatibility = "1.8"
+}
+
+jar {
+    manifest {
+        attributes(
+                "MixinConfigs": "mixins.modid.json",
+                "tweakClass": "org.spongepowered.asm.launch.MixinTweaker",
+                "TweakOrder": 0,
+                "FMLCorePluginContainsFMLMod": "package.MixinLoader"
+        )
+    }
+}
+
+minecraft {
+    mappings channel: 'stable', version: '39-1.12'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+            //-Dfml.coreMods.load=cn.wuming.injection.MixinLoader
+            property 'fml.coreMods.load', 'package.MixinLoader'
+        }
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2860'
+    annotationProcessor 'org.spongepowered:mixin:0.8:processor'
+    implementation('org.spongepowered:mixin:0.8')
+}
+
+mixin {
+    add sourceSets.main, "mixins.modid.refmap.json"
+
+    config "mixins.modid.json"
+}
