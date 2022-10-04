@@ -24,5 +24,5 @@ For those who are unfamiliar with the license, here is a summary of its main poi
 1. Open idea (idea will automatically complete the file)
 2. Change the package in src/java to your own
 3. Change the modid in modid.info in src/resources to your own modid (not the file name)
-4. Change the modid of mixins.modid.json in src/resources to your own (the file name | is consistent with that in modid.info)
+4. Change the modid of mixins.modid.json in src/resources to your own (the file name is consistent with that in modid.info)
 5. Change refmap in mixins.modid.json in src/resources to your own modid
