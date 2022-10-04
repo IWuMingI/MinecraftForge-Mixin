@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "wuming",
+    "name": "WuMingClient",
+    "description": "Test ForgeMod",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Wuming"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

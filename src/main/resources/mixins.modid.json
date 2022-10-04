@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "",
+  "refmap": "mixins.modid.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+	
+  ]
+}

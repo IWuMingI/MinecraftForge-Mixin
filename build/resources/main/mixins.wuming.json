@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "cn.wuming.injection",
+  "refmap": "mixins.killbase.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+
+  ]
+}

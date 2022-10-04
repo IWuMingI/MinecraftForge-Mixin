@@ -1,0 +1,19 @@
+[
+  {
+    "modid": "modid",
+    "name": "Your mod name.",
+    "description": "",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Wuming",
+	 ""
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
