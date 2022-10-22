@@ -2,7 +2,7 @@
 Mincraft forge using mixin
 
 ## Issues
-If you notice any bugs or missing features, you can let us know by opening an issue [here](https://github.com/CCBlueX/LiquidBounce/issues).
+If you notice any bugs or missing features, you can let us know by opening an issue [here](https://github.com/IWuMingI/MinecraftForge-Mixin/issues).
 
 ## License
 This project is subject to the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). This does only apply for source code located directly in this clean repository. During the development and compilation process, additional source code may be used to which we have obtained no rights. Such code is not covered by the GPL license.
